@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bootstrap 5 Buttons & Button Groups</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container text-center">
+
+        <!-- Buttons -->
+        <h1 class="text-center">Buttons</h1>
+        <button class="btn btn-secondary" type="button">Onayla</button>
+        <button class="btn btn-primary" type="button">Giriş yap</button>
+        <button class="btn btn-success" type="button">Kabul et</button>
+        <br>
+
+        <!-- Outline buttons -->
+        <h1 class="text-center">Outline Buttons</h1>
+        <button class="btn btn-outline-primary" type="button">Devam et</button>
+        <button class="btn btn-outline-dark" type="button">Oturumu kapat</button>
+        <button class="btn btn-outline-warning" type="button">Güncelle</button>
+        <br>
+
+        <!-- Disabled button -->
+        <h1 class="text-center">Disabled</h1>
+        <button class="btn btn-primary disabled" type="button">Çalıştır</button>
+
+        <!-- Button groups -->
+        <h1 class="text-center">Button groups</h1>
+        <div class="btn-group" role="group" aria-label="İşlemler">
+            <button class="btn btn-primary" type="button">Seç</button>
+            <button class="btn btn-outline-danger" type="button">Güncelle</button>
+            <button class="btn btn-primary" type="button">Sil</button>
+        </div>
+        <br>
+        <br>
+
+        <!-- Button groups -->
+        <div class="btn-group" role="toolbar" aria-label="Gruplandırma">
+            <div class="btn-group me-2" role="group" aria-label="Programlama Dilleri">
+                <button class="btn btn-dark" type="button">JavaScript</button>
+                <button class="btn btn-dark" type="button">C#</button>
+                <button class="btn btn-dark" type="button">Python</button>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Office Programları">
+                <button class="btn btn-primary" type="button">Word</button>
+                <button class="btn btn-primary" type="button">Excel</button>
+                <button class="btn btn-primary" type="button">Powerpoint</button>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Yabancı Diller">
+                <button class="btn btn-danger" type="button">İngilizce</button>
+                <button class="btn btn-danger" type="button">Almanca</button>
+                <button class="btn btn-danger" type="button">Fransızca</button>
+            </div>
+        </div>
+
+        <!-- Dropdown menu -->
+        <h1 class="text-center">Dropdown Menu</h1>
+        <div class="btn-group" role="group" aria-label="Dropdown Menu">
+            <button id="btnGroupDrop1" class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kurslar</button>
+            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <li>
+                    <a href="#" class="dropdown-item">C</a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">Java</a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">JavaScript</a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-item">Swift</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
